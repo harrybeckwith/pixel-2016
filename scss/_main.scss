@@ -1,0 +1,64 @@
+// ==========================================================================
+// Main
+// ==========================================================================
+
+  input {
+    display: block;
+  }
+  .user-input,textarea {
+    width: 100%;
+    border:none;
+    margin:10px 0px;
+    border-radius: 18px;
+    padding: 9px;
+    line-height: 1.4em;
+    color: #555;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    background: rgba(0,0,0,0.07);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.12);
+    -webkit-transition: background-color 0.2s ease;
+    -moz-transition: background-color 0.2s ease;
+    -o-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+    &:focus {
+      background: #fff;
+      outline-width: 0;
+    }
+  }
+  form {
+        max-width: 500px;
+    margin: 0 auto;
+  }
+
+textarea:focus, input:focus{
+    outline: none;
+}
+input[type="submit"] {
+  width:100%;
+  background: #ea1d63;
+  border:none;
+  color:#fff;
+  border-radius: 18px;
+  padding:5px 0px;
+  @include transition(.3s linear);
+  &:hover {
+    background: lighten(#ea1d63,10%);
+  }
+}
+.error {
+      color: #ff0;
+    font-size: 30px;
+  a {
+     color:red;
+      }
+  }
+
+.sent {
+    font-size: 30px;
+    text-align: center;
+    color:green;
+  }
+
